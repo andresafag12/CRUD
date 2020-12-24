@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css.css">
+
+</head>
+
+<body>
+    <!doctype html>
+    <html lang="en">
+
+    <body>
+        <div class="container mt-5">
+            <div class="card formulary">
+                <div class="card-body">
+                    <form id="form-car" onsubmit='event.preventDefault(), addBrand()'>
+                        <div class="formulary w-50">
+                            <div class="form-group">
+                                <label for="brand">Brand</label>
+                                <input type="text" class="form-control" id="brand" placeholder="Enter brand">
+                            </div>
+                            <div class="form-group">
+                                <label for="model">Model</label>
+                                <input type="text" class="form-control" id="model" placeholder="Enter Model">
+                            </div>
+                            <div class="accesorial">
+                                <div class="inneraccesorial">
+                                    <label for="color">Color</label>
+                                    <input id="color" type="color">
+                                    <label for="year">Year</label>
+                                    <input type="number" min="1920" max="2020" id="year" placeholder="YYYY">
+                                    <label for="price">Price $</label>
+                                    <input type="number" min="0" max="200000" step="any" id="price" placeholder="Price">
+                                </div>
+                            </div>
+                            <button type="submit" class="mt-2 btn btn-primary button-submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <table class="table font">
+                <thead>
+                    <tr>
+
+                        <th scope="col">Brand</th>
+                        <th scope="col">Model</th>
+                        <th scope="col">Color</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Options</th>
+                    </tr>
+                </thead>
+                <tbody id="container-cars">
+
+                </tbody>
+            </table>
+
+
+        </div>
+        <script src="./js.js"></script>
+    </body>
+
+    </html>
+
+</body>
+
+</html>
